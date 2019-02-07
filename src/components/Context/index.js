@@ -30,12 +30,17 @@ export class Provider extends Component{
             name: "Johnny",
             score: 0,
             id: 5
+          },
+          {
+            name: "Ollie",
+            score: 0,
+            id: 6
           }
         ]
       };
     
     // player id counter
-  prevPlayerId = 5;
+  prevPlayerId = 6;
 
   getHighScore = () => {
     const scores = this.state.players.map( p => p.score );
